@@ -10,7 +10,7 @@ public class Main {
         boolean flag = true;
         while(flag) {
             System.out.println("\nWhat do you want to do? ");
-            System.out.print("1.Initialize The Cards\n2.Shuffle The Cards\n3.Display The Cards\n0.Exit");
+            System.out.print("1.Initialize The Cards\n2.Shuffle The Cards\n3.Distribute The Cards\n4.Display The Cards\n0.Exit");
             System.out.print("\nEnter Your Choice : ");
             int usrChoice = scnr.nextInt();
             switch (usrChoice) {
@@ -19,6 +19,9 @@ public class Main {
                     break;
                 case Constants.SHUFFLE_THE_CARDS :
                     deckOfCards.shuffleTheCards();
+                    break;
+                case Constants.DISTRIBUTE_THE_CARDS :
+                    deckOfCards.distributeTheCards();
                     break;
                 case Constants.DISPLAY_THE_CARDS :
                     deckOfCards.displayTheCards();
